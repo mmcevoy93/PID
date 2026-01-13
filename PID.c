@@ -1,3 +1,13 @@
+/*
+ * PID Controller implementation
+ *
+ * Features:
+ *  - Proportional, Integral, Derivative control
+ *  - Anti-windup via integrator clamping
+ *  - Band-limited differentiator (derivative on measurement)
+ *
+ * Suitable for embedded and real-time systems.
+ */
 #include "PID.h"
 
 void PIDController_Init(PIDController *pid) {
