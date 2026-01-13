@@ -12,6 +12,8 @@
 
 void PIDController_Init(PIDController *pid) {
 
+	if (pid == 0) return;
+	
 	/* Clear controller variables */
 	pid->integrator = 0.0f;
 	pid->prevError  = 0.0f;
